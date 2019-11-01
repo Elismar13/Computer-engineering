@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "Lista_encadeada.h"
 
-List* criaLista() {
+List* createList() {
     List* L = (List*) malloc(sizeof(List));
     if(L == NULL) return NULL;
 
@@ -10,65 +10,64 @@ List* criaLista() {
     return L;
 }
 
-//============================= Inserindo Elementos ===============================
-int insereInicio(List* Inicio, int valor) {
+void add(List* l, int valor) {
     Node* no = (Node*) malloc(sizeof(Node));
-    if(no == NULL) return NULL;
+    Node *a, *p;
 
     no->v = valor;
-    if(Inicio->begin == NULL)  { //Lista esta vazia
-        Inicio->begin = no;
+    if(l->begin == NULL)  {     //Lista esta vazia
+        l->begin = no;
         no->Next = NULL;
     }
     else {                      //Lista tiver mais de um elemento elemento
-        no->Next = Inicio->begin;
-        Inicio->begin = no;
-    }
-    return 1;
-}
-
-int insereQualquerLugar(List* Inicio, int posicao, int valor) {
-    Node* newNo = (Node*) malloc(sizeof(Node));
-    Node* p;
-    if(newNo == NULL) return NULL;
-
-    //Atribuindo o valor ao no criado
-    newNo->v = valor;
-
-    //Atribuindo a P o inicio da lista
-    p = Inicio->begin;
-
-    for(i = 0; p->Next != NULL; i++) {
-        if(i == posicao) {
-            newNo->Next = p->Next;
-            p->Next = newNo;
-            return 1;
+        p = l->begin;
+        a = p;
+        while(p != NULL) {
+            a = p;
+            p = p->Next;
         }
+        a->Next = no;
+        no->Next = NULL;
     }
-    return 0;
 }
 
-//============================== Buscando Elementos ===============================
-List* buscaSequencial(List* Inicio, int buscado) {
-    Node* p = Inicio->Next;
-    while(p != NULL) {
-        if(p->v == buscado) return p;
+void printList(List* l) {
+    Node* p = l->begin;
+    if(p != NULL) {
+        do {
+            printf("%d ", p->v);
+            p = p->Next;
+        } while(p != NULL);
+        printf("\n");
     }
-    return NULL;
 }
 
-//============================= Removendo Elementos ===============================
-void removeElemento(List* Inicio, int valorASerRemovido) {
-    Node* p;
-    p = Inicio->begin;
+int isEmpty(List* l){
+    return (l->begin == NULL);
+}
 
-    while(p != NULL) {
-        if(p->Next->v == valorASerRemovido) {
-            p->Next = p->Next->Next;
-            free(p->Next)
+void removeBack(List* l) {
+    Node *p, *a; 
+    p = l->begin;
+    a = p;
+    if(!isEmpty(l)) {
+        while(p->Next != NULL) {
+            a = p;
+            p = p->Next;
         }
+        a->Next = NULL;
+        free(p);
+    }
+}
+
+int size(List* l) {
+    Node* p = l->begin;
+    int length = 0;
+
+    while(p != NULL) {
         p = p->Next;
+        length++;
     }
-
-    free(p);
+    return length;
 }
+

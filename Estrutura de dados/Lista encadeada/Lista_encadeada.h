@@ -1,21 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct Node {
+    struct Node* Next;
+    int v;
+};
+typedef struct Node Node;
+
 typedef struct {
     Node* begin;
 } List;
 
-typedef struct {
-    Node* Next;
-    int16_t v;
-} Node;
+List* createList();
 
-List* criaLista();
+void add(List* l, int valor);  //Adição no fim
 
-int insereInicio(List* Inicio, int valor);
+void printList(List* l);
 
-int insereQualquerLugar(List* Inicio, int posicao, int valor);
+int isEmpty(List* l);
 
-List* buscaSequencial(List* Inicio, int buscado);
+void removeBack(List* l);   //Remoção fim
 
-void removeElemento(List Inicio, int valorASerRemovido);
+int size(List* l);
+
+
