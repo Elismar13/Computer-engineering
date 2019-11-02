@@ -19,6 +19,7 @@ void add(List* l, int valor) {
         l->begin = no;
         no->Next = NULL;
     }
+
     else {                      //Lista tiver mais de um elemento elemento
         p = l->begin;
         a = p;
@@ -50,24 +51,33 @@ void removeBack(List* l) {
     Node *p, *a; 
     p = l->begin;
     a = p;
-    if(!isEmpty(l)) {
-        while(p->Next != NULL) {
-            a = p;
-            p = p->Next;
-        }
-        a->Next = NULL;
-        free(p);
+    
+    //Se eu quiser remover o ultimo elemento
+    if(p->Next == NULL) {
+        l->begin = NULL;
+        return;
     }
+
+    while(p->Next != NULL) {
+        a = p;
+        p = p->Next;
+    }
+    a->Next = NULL;
+    free(p);
 }
 
 int size(List* l) {
     Node* p = l->begin;
     int length = 0;
+    
+    //printf("%p\n", l->begin); 
+    if(l->begin == NULL) return 0;
 
     while(p != NULL) {
         p = p->Next;
         length++;
     }
     return length;
+    
 }
 
