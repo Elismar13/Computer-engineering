@@ -22,24 +22,24 @@ int main (void) {
     printf("Tamanho: %d\n\n", size(lista)); 
 
     add(lista, 60);
-    printf("Tamanho: %d\n\n", size(lista)); 
-    printList(lista);
-
-    removeBack(lista);
-    printf("Tamanho: %d\n\n", size(lista)); 
-    removeBack(lista);
-
-    printList(lista);
-    printf("Tamanho: %d\n\n", size(lista)); 
-    removeBack(lista);
-
     printList(lista);
     printf("Tamanho: %d\n\n", size(lista)); 
 
     removeBack(lista);
     printList(lista);
+    printf("Tamanho: %d\n\n", size(lista)); 
 
-    if(isEmpty) printf("Lista vazia\n");
+    printList(lista);
+    printf("Tamanho: %d\n\n", size(lista)); 
+    removeBack(lista);
+
+    printList(lista);
+    printf("Tamanho: %d\n\n", size(lista)); 
+
+    removeBack(lista);
+
+    printList(lista);
+    if(isEmpty(lista)) printf("Lista vazia\n");
     printf("Tamanho: %d\n\n", size(lista)); 
     return 0;
 }
