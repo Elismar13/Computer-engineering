@@ -1,0 +1,22 @@
+>Para compilar um arquivo .java:
+	javac <Arquivo.java>
+>Para compilar mais de um arquivo .java:
+	javac src/diretoriopacores/.../*.java -d bin   //Tudo todos os arquivos que terminam com .java e jogar para a pasta bin
+
+>Para executar um bytecode em java:
+	>Primeiro procura o .class (bytecode) do arquivo;
+	>em seguida:
+		java <APENAS O NOME>
+>Para executar mais de uma class:
+    >Sem pacote: java -cp bin Hello
+    >Com pacote: java -cp bin br.edu.ifpb.Hello
+
+
+>Empacotar vários arquivos:
+     >Sem pacote: jar --create --file destino/<NomeArquivo>.jar --main-class=Hello -C bin/ . //Tudo da pasta executando 
+     >Com pacote: jar --create --file destino/<NomeArquivo>.jar --main-class=br.edu.ifpb.Hello -C bin/ . //Tudo da pasta executando 
+
+>executar o .jar:
+java -jar dist/myapp.jar
+
+
