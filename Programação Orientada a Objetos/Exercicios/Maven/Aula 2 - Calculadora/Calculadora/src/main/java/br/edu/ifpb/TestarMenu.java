@@ -10,36 +10,46 @@ public class TestarMenu
 
         MenuCalculadora menu = new MenuCalculadora();
         int Opcao;
-        double[] numeros;
-        double resultado;
+        double[] numeros = {0,0};
+        double resultado = 0.00;
 
-        menu.exibirMenu();
+        while(true) {
+            menu.exibirMenu();
 
-        Opcao = s1.nextInt();
+            Opcao = s1.nextInt();
 
-        numeros = menu.capturarNumeros();
+            //Verificar opção
+            if(Opcao < 0 || Opcao > 6) {
+                System.out.println("Opção inválida. Digite novamente: ");
+                continue;
+            }
 
+            if(Opcao <= 4) {
+                System.out.print("Digite o primeiro e o segundo numero: ");
+                numeros = menu.capturarNumeros();
+            }
 
-        switch (Opcao) {
-            case 1:
-                resultado = menu.c1.somar( numeros[0], numeros[1] );
-                break;
-            case 2:
-                resultado = menu.c1.somar( numeros[0], numeros[1] );
-                break;
-            case 3:
-                resultado = menu.c1.somar( numeros[0], numeros[1] );
-                break;
-            case 4:
-                resultado = menu.c1.somar( numeros[0], numeros[1] );
-                break;
-            case 5:
-                resultado = menu.c1.somar( numeros[0], numeros[1] );
-                break;
-            case 6:
-                resultado = menu.c1.somar( numeros[0], numeros[1] );
-                break;
+            switch (Opcao) {
+                case 1:
+                    resultado = menu.c1.somar( numeros[0], numeros[1] );
+                    break;
+                case 2:
+                    resultado = menu.c1.subtrair( numeros[0], numeros[1] );
+                    break;
+                case 3:
+                    resultado = menu.c1.multiplicar( numeros[0], numeros[1] );
+                    break;
+                case 4:
+                    resultado = menu.c1.dividir( numeros[0], numeros[1] );
+                    break;
+                case 5:
+                    System.out.println("Descrição : " + menu.c1.consultarDescricao());
+                    return;
+                case 6:
+                    return;
+            }
 
+            System.out.printf("Resultado: %.2f\n", resultado) ;
         }
     }
 }

@@ -16,7 +16,7 @@ public class MenuCalculadora {
         System.out.println("\t4. Dividir");
         System.out.println("\t5. Sobre a calculadora");
         System.out.println("\t6. Sair");
-        System.out.println("\tDigite uma opção: ");
+        System.out.print("\tDigite uma opção: ");
     }
 
     public double[] capturarNumeros() {
