@@ -9,7 +9,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- DAQUI PRA BAIXO FOI EDITADO -->
+    <name>O módulo filho (GUI)</name>
+    <url>http://www.minhaempresa.com/site</url>
+    <description>Este é o módulo de interface de usuário</description>
+
+
     <artifactId>modulo-GUI</artifactId>
 
+    <!-- ADICIONANDO A DEPENDICIA DO OUTRO MODULO NESSE -->
+    <dependencies>
+        <dependency>
+            <groupId>br.edu.ifpb.poo</groupId>
+            <artifactId>Modulo-livros</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

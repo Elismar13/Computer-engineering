@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Modulo-GUI" />
-        <module name="Modulo-Livros" />
+        <module name="Modulo-livros" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

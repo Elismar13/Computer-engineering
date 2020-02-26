@@ -9,7 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>multi-modulos-livro</artifactId>
+    <name>O módulo filho (Livros)</name>
+    <url>http://www.minhaempresa.com/site</url>
+    <description>That module contains the source code from books and catalog</description>
+
+
+    <artifactId>Modulo-livros</artifactId>
 
 
 </project>
