@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad08c1cb-6a7d-4a56-bcea-35fce5646cd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../Estatistica/Projeto Serenata de Amor - Bruna, Elismar, Lilian.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Algoritmos_Ordenacao/QuickSort.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Fila Estática/Fila estática.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista Estática/Lista estatica.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Aprimorada/Lista_encadeada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Aprimorada/Lista_encadeada.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Aprimorada/Testando" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Aprimorada/testandoLista.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Aprimorada/testandoListaAprimorada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Normal/Lista_encadeada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Normal/Lista_encadeada.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Normal/Testando" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Normal/testandoLista.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Otimizada /Lista_encadeada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Otimizada /Lista_encadeada.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Otimizada /Testando" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Lista encadeada/Otimizada /testandoLista.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista duplamente encadeada/Testando" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista duplamente encadeada/listaDupla_Encadeada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista duplamente encadeada/listaDupla_Encadeada.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista duplamente encadeada/testandoListaDupla_Encadeada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Aprimorada/Lista_encadeada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Aprimorada/Lista_encadeada.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Aprimorada/Testando" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Aprimorada/testandoLista.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Aprimorada/testandoListaAprimorada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Normal/Lista_encadeada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Normal/Lista_encadeada.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Normal/Testando" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Normal/testandoLista.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Otimizada /Lista_encadeada.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Otimizada /Lista_encadeada.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Otimizada /Testando" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Estrutura de dados/Listas encadeadas/Lista encadeada/Otimizada /testandoLista.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Introducao ao Java/bin/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Introducao ao Java/comandos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Introducao ao Java/dist/Hello.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Introducao ao Java/src/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/(BASE_PROGRAMAS)pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/src/main/java/br/edu/ifpb/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/src/test/java/br/edu/ifpb/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/classes/br/edu/ifpb/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/my-app-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/surefire-reports/TEST-br.edu.ifpb.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/surefire-reports/br.edu.ifpb.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 1 - Somando Numeros/Somando-Numeros/target/test-classes/br/edu/ifpb/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/Calculadora.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/src/main/java/br/edu/ifpb/Calculadora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/src/main/java/br/edu/ifpb/MenuCalculadora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/src/main/java/br/edu/ifpb/TestarMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/src/test/java/br/edu/ifpb/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/Calculadora-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/classes/br/edu/ifpb/Calculadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/classes/br/edu/ifpb/MenuCalculadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/classes/br/edu/ifpb/TestarMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/surefire-reports/TEST-br.edu.ifpb.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/surefire-reports/br.edu.ifpb.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/target/test-classes/br/edu/ifpb/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/src/main/java/br/edu/ifpb/Condicionais.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/src/test/java/br/edu/ifpb/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/classes/br/edu/ifpb/Condicionais.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/my-app-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/surefire-reports/TEST-br.edu.ifpb.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/surefire-reports/br.edu.ifpb.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/Aula1.1-Condicionais/Condicionais/target/test-classes/br/edu/ifpb/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/.idea/_name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-GUI/Modulo-GUI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-GUI/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-GUI/src/main/java/br/edu/ifpb/poo/Interface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-livros/Modulo-livros.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-livros/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-livros/src/main/java/br/edu/ifpb/poo/CatálogoLivros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-livros/src/main/java/br/edu/ifpb/poo/Livro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-livros/target/classes/br/edu/ifpb/poo/CatálogoLivros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-livros/target/classes/br/edu/ifpb/poo/Livro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-livros/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Modulo-livros/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/Pratica 2 - Livros.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/out/production/Modulo-GUI/br/edu/ifpb/poo/Interface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pratica 2 - Livros/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/ProjetoLivro/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/_gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/Sistema-Banco.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/src/main/java/br/edu/ifpb/Calculadora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/src/main/java/br/edu/ifpb/MenuCalculadora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/src/main/java/br/edu/ifpb/TestarMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/src/test/java/br/edu/ifpb/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/target/classes/br/edu/ifpb/Calculadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/target/classes/br/edu/ifpb/MenuCalculadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/target/classes/br/edu/ifpb/TestarMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema banco/Sistema-Banco/target/test-classes/br/edu/ifpb/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../README.md" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\ASSERT 3D\Documents\Repositorios GITHUB\Computer-engineering\Programação Orientada a Objetos\Exercicios\Praticas\Pratica 3- ProjBanco\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YaR8cFmGdpOmSme2xGQXUwVBEc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad08c1cb-6a7d-4a56-bcea-35fce5646cd1" name="Default Changelist" comment="" />
+      <created>1583178559048</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583178559048</updated>
+      <workItem from="1583178561536" duration="918000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
