@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e0781e0-b913-4597-8a3d-1d3f47ce9e9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modulo-livros/Modulo-livros.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Maven/Aula 2 - Calculadora/Calculadora/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modulo-GUI/Modulo-GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo-GUI/Modulo-GUI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modulo-GUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo-GUI/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modulo-GUI/src/main/java/br/edu/ifpb/poo/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo-GUI/src/main/java/br/edu/ifpb/poo/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modulo-Livros/Modulo-Livros.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modulo-Livros/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo-livros/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modulo-Livros/src/main/java/br/edu/ifpb/poo/CatálogoLivros.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modulo-Livros/src/main/java/br/edu/ifpb/poo/Livro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4e0781e0-b913-4597-8a3d-1d3f47ce9e9a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1582199694182</updated>
       <workItem from="1582244157548" duration="226000" />
-      <workItem from="1582738157731" duration="4170000" />
+      <workItem from="1582738157731" duration="4477000" />
+      <workItem from="1583284889268" duration="4000" />
     </task>
     <servers />
   </component>
@@ -123,22 +108,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="456" y="146" width="426" height="482" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582244380464" />
-    <state width="1324" height="185" key="GridCell.Tab.0.bottom" timestamp="1582742505171">
+    <state width="1324" height="185" key="GridCell.Tab.0.bottom" timestamp="1582742647029">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="185" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582742505171" />
-    <state width="1324" height="185" key="GridCell.Tab.0.center" timestamp="1582742505170">
+    <state width="1324" height="185" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1582742647029" />
+    <state width="1324" height="185" key="GridCell.Tab.0.center" timestamp="1582742647029">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="185" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582742505170" />
-    <state width="1324" height="185" key="GridCell.Tab.0.left" timestamp="1582742505168">
+    <state width="1324" height="185" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1582742647029" />
+    <state width="1324" height="185" key="GridCell.Tab.0.left" timestamp="1582742647029">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="185" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582742505168" />
-    <state width="1324" height="185" key="GridCell.Tab.0.right" timestamp="1582742505171">
+    <state width="1324" height="185" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1582742647029" />
+    <state width="1324" height="185" key="GridCell.Tab.0.right" timestamp="1582742647029">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="185" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582742505171" />
+    <state width="1324" height="185" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1582742647029" />
     <state x="216" y="42" width="926" height="682" key="Maven.ArtifactSearchDialog" timestamp="1582740397216">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -147,6 +132,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="166" y="0" width="1026" height="766" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582742338598" />
+    <state x="352" y="214" key="com.intellij.ide.util.TipDialog" timestamp="1583284892925">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="352" y="214" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1583284892925" />
     <state x="96" y="81" width="1159" height="601" key="new project wizard" timestamp="1582741128651">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
