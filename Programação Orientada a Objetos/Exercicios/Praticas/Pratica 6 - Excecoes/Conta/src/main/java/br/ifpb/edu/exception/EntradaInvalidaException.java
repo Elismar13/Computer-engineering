@@ -1,6 +1,6 @@
 package br.ifpb.edu.exception;
 
-public class EntradaInvalidaException extends Exception {
+public class EntradaInvalidaException extends RuntimeException {
     public EntradaInvalidaException() {
         super("Entrada inválida.");
     }

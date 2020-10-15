@@ -60,11 +60,11 @@ public class ContaCorrenteTest {
     }
 
     void SacaEVerificaSaquesRealizadosNaConta() {
-//        ContaCorrente c1 = new ContaCorrente( 555, "Elismar");
-//        Assert.assertTrue( c1.sacar(200) );
-//        Assert.assertFalse( c1.sacar(10000) );
-//        Assert.assertFalse( c1.sacar(-100) );
-//        Assert.assertTrue( c1.sacar(0) );
+        ContaCorrente c1 = new ContaCorrente( 555, "Elismar");
+        Assert.assertTrue( c1.sacar(200) );
+        Assert.assertFalse( c1.sacar(10000) );
+        Assert.assertFalse( c1.sacar(-100) );
+        Assert.assertTrue( c1.sacar(0) );
     }
 
     void SaldoEVerificaSaldo() {

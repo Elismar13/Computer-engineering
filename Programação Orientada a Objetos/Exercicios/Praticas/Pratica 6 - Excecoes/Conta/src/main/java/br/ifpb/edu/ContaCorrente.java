@@ -2,6 +2,7 @@ package br.ifpb.edu;
 
 import br.ifpb.edu.exception.EntradaInvalidaException;
 import br.ifpb.edu.exception.QuantiaNaoNegativaException;
+import br.ifpb.edu.exception.SaldoInuficienteException;
 
 import java.math.BigDecimal;
 
@@ -27,6 +28,8 @@ public class ContaCorrente {
     private void setNumero(Long numero) {
         if(numero > 0)
             this.numero = numero;
+        else
+            throw new EntradaInvalidaException("Numero não pode ser negativo.");
     }
 
     private String getTitular() {
@@ -36,6 +39,8 @@ public class ContaCorrente {
     private void setTitular(String titular) {
         if(!titular.isBlank())
             this.titular = titular;
+        else
+            throw new EntradaInvalidaException("Nome não pode ser deixado em branco.");
     }
 
     private BigDecimal getSaldo() {
