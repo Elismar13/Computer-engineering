@@ -17,26 +17,30 @@ public class ContaCorrente {
         setSaldo(saldo);
     }
 
-    public Long getNumero() {
+    private Long getNumero() {
         return numero;
     }
 
-    public void setNumero(Long numero) {
+    private void setNumero(Long numero) {
         if(numero > 0)
             this.numero = numero;
     }
 
-    public String getTitular() {
+    private String getTitular() {
         return titular;
     }
 
-    public void setTitular(String titular) {
+    private void setTitular(String titular) {
         if(!titular.isBlank())
             this.titular = titular;
     }
 
-    public BigDecimal getSaldo() {
+    private BigDecimal getSaldo() {
         return saldo;
+    }
+
+    public double saldo() {
+        return getSaldo().doubleValue();
     }
 
     public void setSaldo(BigDecimal saldo) {
@@ -53,8 +57,10 @@ public class ContaCorrente {
 
     public BigDecimal sacar(BigDecimal valor) {
         if(valor.doubleValue() > 0.00) {
-            BigDecimal saque = saldo.subtract(valor);
+            setSaldo(saldo.subtract(valor));
         }
+
+        return BigDecimal.ZERO;
     }
 
 }

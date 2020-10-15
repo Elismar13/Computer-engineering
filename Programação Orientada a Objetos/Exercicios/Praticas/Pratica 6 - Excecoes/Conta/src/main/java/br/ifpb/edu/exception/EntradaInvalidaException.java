@@ -2,7 +2,7 @@ package br.ifpb.edu.exception;
 
 public class EntradaInvalidaException extends Exception {
     public EntradaInvalidaException() {
-        super("Entrada inválida.")
+        super("Entrada inválida.");
     }
 
     public EntradaInvalidaException(String message) {
