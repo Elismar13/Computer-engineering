@@ -1,5 +1,6 @@
 package br.ifpb.edu;
 
+import br.ifpb.edu.exception.EntradaInvalidaException;
 import br.ifpb.edu.exception.QuantiaNaoNegativaException;
 
 import java.math.BigDecimal;
@@ -49,11 +50,14 @@ public class ContaCorrente {
         this.saldo = saldo;
     }
 
-    public boolean deposito(BigDecimal valor) throws QuantiaNaoNegativaException {
+    public boolean deposito(BigDecimal valor) throws QuantiaNaoNegativaException, EntradaInvalidaException {
         if(valor.doubleValue() > 0.00) {
             setSaldo(saldo.add(valor));
             return true;
-        } else {
+        } else if(valor.doubleValue() == 0.00) {
+            throw new EntradaInvalidaException("O valor não pode ser nulo!");
+        }
+        else {
             throw new QuantiaNaoNegativaException("O valor não pode ser negativo!");
         }
     }
