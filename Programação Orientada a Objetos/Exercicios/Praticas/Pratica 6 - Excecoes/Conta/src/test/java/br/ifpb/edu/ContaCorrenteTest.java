@@ -2,6 +2,7 @@ package br.ifpb.edu;
 
 import br.ifpb.edu.exception.EntradaInvalidaException;
 import br.ifpb.edu.exception.QuantiaNaoNegativaException;
+import br.ifpb.edu.exception.SaldoInuficienteException;
 import org.junit.Assert;
 import org.junit.function.ThrowingRunnable;
 import org.junit.jupiter.api.Test;
@@ -9,6 +10,23 @@ import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 
 public class ContaCorrenteTest {
+    @Test
+    void TestaCalculoCPMF() {
+        ContaCorrente c1 = new ContaCorrente(555L, "Elismar", new BigDecimal(400.00));
+        try {
+            BigDecimal valor = c1.sacar(new BigDecimal(100.00));
+            Assert.assertEquals(valor.doubleValue(), 100.00, 0);
+            Assert.assertEquals(c1.saldo(), 296.00, 0);
+        } catch (Exception e) { }
+
+        ContaCorrente c2 = new ContaCorrente(555L, "Isabela");
+        try {
+            BigDecimal valor = c1.sacar(new BigDecimal(1.00));
+            Assert.assertEquals(valor.doubleValue(), 1.00, 0);
+            Assert.assertEquals(c1.saldo(), 8.91, 0);
+        } catch (Exception e) { }
+    }
+
     @Test
     void DepositaEVerificaSaldo() {
         ContaCorrente c1 = new ContaCorrente(555L, "Elismar");
@@ -60,11 +78,11 @@ public class ContaCorrenteTest {
     }
 
     void SacaEVerificaSaquesRealizadosNaConta() {
-        ContaCorrente c1 = new ContaCorrente( 555, "Elismar");
-        Assert.assertTrue( c1.sacar(200) );
-        Assert.assertFalse( c1.sacar(10000) );
-        Assert.assertFalse( c1.sacar(-100) );
-        Assert.assertTrue( c1.sacar(0) );
+//        ContaCorrente c1 = new ContaCorrente( 555, "Elismar");
+//        Assert.assertTrue( c1.sacar(200) );
+//        Assert.assertFalse( c1.sacar(10000) );
+//        Assert.assertFalse( c1.sacar(-100) );
+//        Assert.assertTrue( c1.sacar(0) );
     }
 
     void SaldoEVerificaSaldo() {

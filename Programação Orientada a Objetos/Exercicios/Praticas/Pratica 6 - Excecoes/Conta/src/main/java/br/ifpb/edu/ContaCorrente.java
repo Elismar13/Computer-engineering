@@ -7,6 +7,8 @@ import br.ifpb.edu.exception.SaldoInuficienteException;
 import java.math.BigDecimal;
 
 public class ContaCorrente {
+    private final double CPMF = 0.01;
+
     private Long numero;
     private String titular;
     private BigDecimal saldo;
@@ -47,11 +49,7 @@ public class ContaCorrente {
         return saldo;
     }
 
-    public double saldo() {
-        return getSaldo().doubleValue();
-    }
-
-    public void setSaldo(BigDecimal saldo) {
+    private void setSaldo(BigDecimal saldo) {
         this.saldo = saldo;
     }
 
@@ -67,12 +65,37 @@ public class ContaCorrente {
         }
     }
 
-    public BigDecimal sacar(BigDecimal valor) {
+    public BigDecimal sacar(BigDecimal valor) throws SaldoInuficienteException {
+        BigDecimal cpmf = this.calculaCPMF();
         if(valor.doubleValue() > 0.00) {
-            setSaldo(saldo.subtract(valor));
+            if(valor.doubleValue() > cpmf.doubleValue()) {
+                setSaldo(saldo.subtract(valor)
+                              .subtract(cpmf));
+                return valor;
+            }
+            else {
+                throw new SaldoInuficienteException("Saldo insuficiente.");
+            }
         }
-
-        return BigDecimal.ZERO;
+        else {
+            throw new EntradaInvalidaException("Não pode sacar valores negativos.");
+        }
     }
 
+    public double saldo() {
+        return getSaldo().doubleValue();
+    }
+
+    public String extrato() {
+        return "";
+    }
+
+    private BigDecimal calculaCPMF() {
+        return getSaldo().multiply(new BigDecimal(0.01) );
+    }
+
+    private void descontaCPMF() {
+        BigDecimal CPMFDescontado = this.calculaCPMF();
+        setSaldo(getSaldo().subtract(CPMFDescontado));
+    }
 }
