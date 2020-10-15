@@ -1,24 +1,42 @@
 package br.ifpb.edu;
 
+import br.ifpb.edu.exception.EntradaInvalidaException;
+import br.ifpb.edu.exception.QuantiaNaoNegativaException;
 import org.junit.Assert;
+import org.junit.function.ThrowingRunnable;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class ContaCorrenteTest {
     @Test
     void DepositaContaEVerificaDepositosNegativos() {
         ContaCorrente c1 = new ContaCorrente(555L, "Elismar");
 
-        Assert.assertTrue( c1.deposito(new BigDecimal(200.00)) );
+        try {
+            c1.deposito(new BigDecimal(200.00));
+        } catch (QuantiaNaoNegativaException e) {
+
+        };
         Assert.assertEquals( 210.00, c1.saldo(), 0 );
-//        Assert.assertTrue( c1.deposito( new BigDecimal(200.00)) );
-//        Assert.assertTrue( c1.deposito( new BigDecimal(100.00))) );
-//        Assert.assertFalse( c1.deposito(-100) );
-//        Assert.assertFalse( c1.deposito(-800) );
-//        Assert.assertTrue( c1.deposito(100) );
+
+        // deposito negativos e garantindo o tipo da exceção
+        Assert.assertThrows(QuantiaNaoNegativaException.class, () ->  {
+                c1.deposito(new BigDecimal(-100));
+            }
+        );
+        Assert.assertThrows(QuantiaNaoNegativaException.class, () ->  {
+                    c1.deposito(new BigDecimal(-10));
+                }
+        );
+        Assert.assertThrows(QuantiaNaoNegativaException.class, () ->  {
+                    c1.deposito(new BigDecimal(-1));
+                }
+        );
+        Assert.assertThrows(QuantiaNaoNegativaException.class, () ->  {
+                    c1.deposito(new BigDecimal(-0.01));
+                }
+        );
     }
 
     void SacaEVerificaSaquesRealizadosNaConta() {
