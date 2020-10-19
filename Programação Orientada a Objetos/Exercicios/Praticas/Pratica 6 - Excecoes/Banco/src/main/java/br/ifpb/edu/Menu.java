@@ -9,6 +9,7 @@ public class Menu {
         System.out.println(opcao(3, "Saque"));
         System.out.println(opcao(4, "Extrato"));
         System.out.println(opcao(5, "Saldo atual"));
+        System.out.println(opcao(6, "Sair"));
         System.out.println(contorno());
     }
 

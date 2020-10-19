@@ -19,7 +19,7 @@ public class Main {
                 case 1:
                     System.out.print("Digite o nome do usuário: ");
                     String nome = s2.nextLine();
-                    System.out.print("O usuário deseja sacar? S/N");
+                    System.out.print("O usuário deseja sacar? S/N ");
                     String primeiroSaque = s2.nextLine();
                     ContaCorrente novaConta;
 
