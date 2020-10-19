@@ -53,6 +53,15 @@ public class ContaCorrente {
         this.saldo = saldo;
     }
 
+    private BigDecimal calculaCPMF() {
+        return getSaldo().multiply(new BigDecimal(0.01) );
+    }
+
+    private void descontaCPMF() {
+        BigDecimal CPMFDescontado = this.calculaCPMF();
+        setSaldo(getSaldo().subtract(CPMFDescontado));
+    }
+
     public boolean deposito(BigDecimal valor) throws QuantiaNaoNegativaException, EntradaInvalidaException {
         if(valor.doubleValue() > 0.00) {
             setSaldo(saldo.add(valor));
@@ -90,12 +99,4 @@ public class ContaCorrente {
         return "";
     }
 
-    private BigDecimal calculaCPMF() {
-        return getSaldo().multiply(new BigDecimal(0.01) );
-    }
-
-    private void descontaCPMF() {
-        BigDecimal CPMFDescontado = this.calculaCPMF();
-        setSaldo(getSaldo().subtract(CPMFDescontado));
-    }
 }

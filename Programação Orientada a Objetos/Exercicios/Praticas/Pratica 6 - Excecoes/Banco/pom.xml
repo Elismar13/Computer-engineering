@@ -14,6 +14,14 @@
 
     <name>Classe Banco</name>
     <url>http://www.minhaempresa.com/site</url>
+    <dependencies>
+        <dependency>
+            <groupId>br.ifpb.edu</groupId>
+            <artifactId>Conta</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <description>Este é o múdulo filho - Banco</description>
 
 </project>
