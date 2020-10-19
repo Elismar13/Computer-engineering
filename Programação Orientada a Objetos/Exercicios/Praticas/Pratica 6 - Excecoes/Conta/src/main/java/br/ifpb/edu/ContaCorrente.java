@@ -23,7 +23,7 @@ public class ContaCorrente {
         setSaldo(saldo);
     }
 
-    private Long getNumero() {
+    public Long getNumero() {
         return numero;
     }
 

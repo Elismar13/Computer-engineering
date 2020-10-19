@@ -2,7 +2,6 @@ package br.ifpb.edu;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class Banco {
 
@@ -30,6 +29,10 @@ public class Banco {
 
     public ContaCorrente procurarContaPorId(Long id) {
         return contas.get(id);
+    }
+
+    public ContaCorrente atualizaConta(Long id, ContaCorrente conta) {
+        return contas.put(id, conta);
     }
 
     private Long gerarId() {
