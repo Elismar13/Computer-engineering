@@ -13,14 +13,14 @@ public class ContaCorrente {
     private String titular;
     private BigDecimal saldo;
 
-    public ContaCorrente(Long numero, String titular) {
+    public ContaCorrente(Long numero, String titular) throws QuantiaNaoNegativaException, EntradaInvalidaException {
         this(numero, titular, BigDecimal.TEN);
     }
 
-    public ContaCorrente(Long numero, String titular, BigDecimal saldo) {
+    public ContaCorrente(Long numero, String titular, BigDecimal saldo) throws QuantiaNaoNegativaException, EntradaInvalidaException {
         this.numero = numero;
         this.titular = titular;
-        setSaldo(saldo);
+        deposito(saldo);
     }
 
     public Long getNumero() {
@@ -64,7 +64,9 @@ public class ContaCorrente {
 
     public boolean deposito(BigDecimal valor) throws QuantiaNaoNegativaException, EntradaInvalidaException {
         if(valor.doubleValue() > 0.00) {
-            setSaldo(saldo.add(valor));
+            setSaldo((saldo != null)
+                    ? getSaldo().add(valor)
+                    : valor);
             return true;
         } else if(valor.doubleValue() == 0.00) {
             throw new EntradaInvalidaException("O valor não pode ser nulo!");

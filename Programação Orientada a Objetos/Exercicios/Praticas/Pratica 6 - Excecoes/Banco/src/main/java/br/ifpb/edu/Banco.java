@@ -1,5 +1,7 @@
 package br.ifpb.edu;
 
+import br.ifpb.edu.exception.QuantiaNaoNegativaException;
+
 import java.math.BigDecimal;
 import java.util.HashMap;
 
@@ -13,14 +15,14 @@ public class Banco {
         geradorID = new GeradorID(555L);
     }
 
-    public ContaCorrente criaConta(String nome) {
+    public ContaCorrente criaConta(String nome) throws QuantiaNaoNegativaException {
         Long id = this.gerarId();
         ContaCorrente novaConta = new ContaCorrente(id, nome);
         contas.put(id, novaConta);
         return novaConta;
     }
 
-    public ContaCorrente criaConta(String nome, BigDecimal saldoInicial) {
+    public ContaCorrente criaConta(String nome, BigDecimal saldoInicial) throws QuantiaNaoNegativaException {
         Long id = this.gerarId();
         ContaCorrente novaConta = new ContaCorrente(id, nome, saldoInicial);
         contas.put(id, novaConta);

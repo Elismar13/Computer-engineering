@@ -26,22 +26,31 @@ public class Main {
                     String primeiroSaque = s2.nextLine();
                     ContaCorrente novaConta;
 
-                    if (primeiroSaque.equals("S")) {
-                        System.out.print("Digite a quantia: ");
-                        double quantia = s1.nextDouble();
-                        novaConta = banco.criaConta(nome, new BigDecimal(quantia));
-                    } else if (primeiroSaque.equals("N")) {
-                        novaConta = banco.criaConta(nome);
-                    } else {
-                        System.out.println("Opcao invalida. Tente novamente");
+                    try {
+                        if (primeiroSaque.equals("S")) {
+                            System.out.print("Digite a quantia: ");
+                            double quantia = s1.nextDouble();
+                            novaConta = banco.criaConta(nome, new BigDecimal(quantia));
+                        } else if (primeiroSaque.equals("N")) {
+                            novaConta = banco.criaConta(nome);
+                        } else {
+                            System.out.println("Opcao invalida. Tente novamente");
+                            break;
+                        }
+                    } catch (EntradaInvalidaException e) {
+                        System.out.println("ERRO DE ENTRADA: " + e.getMessage() + "\nCancelando operação.");
+                        break;
+                    }
+                    catch (QuantiaNaoNegativaException e) {
+                        System.out.println("ERRO DE QUANTIA NEGATIVA: " + e.getMessage() + "\nCancelando operação.");
                         break;
                     }
 
-                    System.out.println("Conta criada com sucesso.\nAnote seu id: " + novaConta.getNumero());
+                    System.out.println("Conta criada com sucesso.\nANOTE SEU ID: " + novaConta.getNumero());
                     break;
 
                 case 2:
-                    System.out.print("Digite o seu nome da sua conta: ");
+                    System.out.print("Digite o numero da sua conta: ");
                     Long id = digitarID();
                     ContaCorrente conta = banco.procurarContaPorId(id);
                     if(conta == null) {
@@ -56,13 +65,16 @@ public class Main {
                         banco.atualizaConta(id, conta);
                         System.out.println("Conta atualizada com sucesso!");
                         break;
-                    } catch ( QuantiaNaoNegativaException e) {
+                    } catch ( QuantiaNaoNegativaException e ) {
                         System.out.println("ERRO: " + e.getMessage() + "\nCancelando operação.");
                         break;
                     }
                     catch(EntradaInvalidaException e) {
                         System.out.println("ERRO!" + e.getMessage() + "\nCancelando operação.");
                         break;
+                    }
+                    catch(Exception e) {
+                        System.out.println("ERRO do Scanner!");
                     }
 
 
