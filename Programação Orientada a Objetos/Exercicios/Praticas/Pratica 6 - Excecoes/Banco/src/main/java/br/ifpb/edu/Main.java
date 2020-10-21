@@ -17,6 +17,8 @@ public class Main {
         while(true) {
             System.out.print("O que deseja fazer? ");
             int opcao = s1.nextInt();
+            Long id;
+            ContaCorrente conta;
 
             switch (opcao) {
                 case 1:
@@ -29,8 +31,8 @@ public class Main {
                     try {
                         if (primeiroSaque.equals("S")) {
                             System.out.print("Digite a quantia: ");
-                            double quantia = s1.nextDouble();
-                            novaConta = banco.criaConta(nome, new BigDecimal(quantia));
+                            BigDecimal quantia = s2.nextBigDecimal();
+                            novaConta = banco.criaConta(nome, quantia);
                         } else if (primeiroSaque.equals("N")) {
                             novaConta = banco.criaConta(nome);
                         } else {
@@ -51,8 +53,8 @@ public class Main {
 
                 case 2:
                     System.out.print("Digite o numero da sua conta: ");
-                    Long id = digitarID();
-                    ContaCorrente conta = banco.procurarContaPorId(id);
+                    id = digitarID();
+                    conta = banco.procurarContaPorId(id);
                     if(conta == null) {
                         System.out.println("Este id não existe! Tente novamente.");
                         break;
@@ -60,8 +62,8 @@ public class Main {
 
                     try {
                         System.out.print("Quanto voce deseja depositar? ");
-                        double valor = s2.nextDouble();
-                        conta.deposito(new BigDecimal(valor));
+                        BigDecimal valor = s2.nextBigDecimal();
+                        conta.deposito(valor);
                         banco.atualizaConta(id, conta);
                         System.out.println("Conta atualizada com sucesso!");
                         break;
@@ -77,7 +79,21 @@ public class Main {
                         System.out.println("ERRO do Scanner!");
                     }
 
+                case 3:
+                    System.out.print("Digite o ID da conta: ");
+                    id = digitarID();
+                    conta = banco.procurarContaPorId(id);
+                    if(conta == null) {
+                        System.out.println("Este id não existe! Tente novamente.");
+                        break;
+                    }
 
+                    try {
+                        System.out.print("Quanto vocẽ deseja sacar? ");
+                        s2.nextBigDecimal();
+
+
+                    }
                 case 6:
                     System.out.println("Saindo...");
                     System.exit(0);
