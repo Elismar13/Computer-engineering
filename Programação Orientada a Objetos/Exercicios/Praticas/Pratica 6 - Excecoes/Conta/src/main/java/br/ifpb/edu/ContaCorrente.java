@@ -5,6 +5,7 @@ import br.ifpb.edu.exception.QuantiaNaoNegativaException;
 import br.ifpb.edu.exception.SaldoInuficienteException;
 
 import java.math.BigDecimal;
+import java.util.StringJoiner;
 
 public class ContaCorrente {
     private final double CPMF = 0.01;
@@ -76,7 +77,7 @@ public class ContaCorrente {
         }
     }
 
-    public BigDecimal sacar(BigDecimal valor) throws SaldoInuficienteException {
+    public BigDecimal sacar(BigDecimal valor) throws SaldoInuficienteException, QuantiaNaoNegativaException {
         BigDecimal cpmf = this.calculaCPMF();
         if(valor.doubleValue() > 0.00) {
             if(valor.doubleValue() > cpmf.doubleValue()) {
@@ -89,7 +90,7 @@ public class ContaCorrente {
             }
         }
         else {
-            throw new EntradaInvalidaException("Não pode sacar valores negativos.");
+            throw new QuantiaNaoNegativaException("Não pode sacar valores negativos.");
         }
     }
 
@@ -98,7 +99,7 @@ public class ContaCorrente {
     }
 
     public String extrato() {
-        return "";
+        return String.format("ID: %s%nTitular: %s%nSaldo: %s%n", getNumero(), getTitular(), getSaldo());
     }
 
 }
