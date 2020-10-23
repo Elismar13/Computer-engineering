@@ -16,14 +16,14 @@ public class ContaCorrenteTest {
             ContaCorrente c1 = new ContaCorrente(555L, "Elismar", new BigDecimal(400.00));
             BigDecimal valor = c1.sacar(new BigDecimal(100.00));
             Assert.assertEquals(valor.doubleValue(), 100.00, 0);
-            Assert.assertEquals(c1.saldo(), 296.00, 0);
+            Assert.assertEquals(c1.saldo(), new BigDecimal("296.00"));
         } catch (Exception e) { }
 
         try {
             ContaCorrente c1 = new ContaCorrente(555L, "Isabela");
             BigDecimal valor = c1.sacar(new BigDecimal(1.00));
             Assert.assertEquals(valor.doubleValue(), 1.00, 0);
-            Assert.assertEquals(c1.saldo(), 8.90, 0);
+            Assert.assertEquals(c1.saldo(), new BigDecimal("8.90"));
         } catch (Exception e) { }
     }
 
@@ -32,25 +32,25 @@ public class ContaCorrenteTest {
         try {
             ContaCorrente c1 = new ContaCorrente(555L, "Elismar");
             c1.deposito(new BigDecimal(25.00));
-            Assert.assertEquals( 35.00, c1.saldo(), 0 );
+            Assert.assertEquals(c1.saldo(), new BigDecimal("35.00"));
         } catch (Exception e) {}
 
         try {
             ContaCorrente c2 = new ContaCorrente(13L, "Julia");
             c2.deposito(new BigDecimal(10.00));
-            Assert.assertEquals( 20.00, c2.saldo(), 0 );
+            Assert.assertEquals(c2.saldo(), new BigDecimal("20.00"));
         } catch (Exception e) {}
 
         try {
             ContaCorrente c3  = new ContaCorrente(89L, "Joao");
             c3.deposito(new BigDecimal(100.00));
-            Assert.assertEquals( 110.00, c3.saldo(), 0 );
+            Assert.assertEquals(c3.saldo(), new BigDecimal("100.00"));
         } catch (Exception e) {}
 
         try {
             ContaCorrente c4  = new ContaCorrente(8787L, "Carlos", new BigDecimal(1000.00));
             c4.deposito(new BigDecimal(100.00));
-            Assert.assertEquals( 1100.00, c4.saldo(), 0 );
+            Assert.assertEquals(c4.saldo(), new BigDecimal("1100.00"));
         } catch (Exception e) {}
     }
 
@@ -63,17 +63,17 @@ public class ContaCorrenteTest {
             }
         );
         Assert.assertThrows(QuantiaNaoNegativaException.class, () ->  {
-                ContaCorrente c1 = new ContaCorrente(555L, "Elismar");
+                ContaCorrente c1 = new ContaCorrente(51541224124L, "Sasha");
                 c1.deposito(new BigDecimal(-10));
             }
         );
         Assert.assertThrows(QuantiaNaoNegativaException.class, () ->  {
-             ContaCorrente c1 = new ContaCorrente(555L, "Elismar");
+             ContaCorrente c1 = new ContaCorrente(468546L, "Natsu");
              c1.deposito(new BigDecimal(-1));
             }
         );
         Assert.assertThrows(QuantiaNaoNegativaException.class, () ->  {
-                ContaCorrente c1 = new ContaCorrente(555L, "Elismar");
+                ContaCorrente c1 = new ContaCorrente(1312L, "Pedro");
                 c1.deposito(new BigDecimal(-0.01));
             }
         );

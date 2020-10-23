@@ -2,7 +2,7 @@ package br.ifpb.edu;
 
 public class Menu {
     public static void exibirMenu() {
-        System.out.println("Projeto Banco");
+        System.out.println("\nProjeto Banco");
         System.out.println(contorno());
         System.out.println(opcao(1, "Criar uma conta"));
         System.out.println(opcao(2, "Deposito"));

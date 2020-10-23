@@ -19,8 +19,8 @@ public class ContaCorrente {
     }
 
     public ContaCorrente(Long numero, String titular, BigDecimal saldo) throws QuantiaNaoNegativaException, EntradaInvalidaException {
-        this.numero = numero;
-        this.titular = titular;
+        setNumero(numero);
+        setTitular(titular);
         deposito(saldo);
     }
 
@@ -35,7 +35,7 @@ public class ContaCorrente {
             throw new EntradaInvalidaException("Numero não pode ser negativo.");
     }
 
-    private String getTitular() {
+    public String getTitular() {
         return titular;
     }
 
@@ -79,8 +79,10 @@ public class ContaCorrente {
 
     public BigDecimal sacar(BigDecimal valor) throws SaldoInuficienteException, QuantiaNaoNegativaException {
         BigDecimal cpmf = this.calculaCPMF();
+        BigDecimal saldo = getSaldo();
+        BigDecimal disponivelPSaque = saldo.subtract(cpmf);
         if(valor.doubleValue() > 0.00) {
-            if(valor.doubleValue() > cpmf.doubleValue()) {
+            if(valor.doubleValue() <= disponivelPSaque.doubleValue()) {
                 setSaldo(saldo.subtract(valor)
                               .subtract(cpmf));
                 return valor;
@@ -94,12 +96,11 @@ public class ContaCorrente {
         }
     }
 
-    public double saldo() {
-        return getSaldo().doubleValue();
+    public BigDecimal saldo() {
+        return getSaldo();
     }
 
     public String extrato() {
-        return String.format("ID: %s%nTitular: %s%nSaldo: %s%n", getNumero(), getTitular(), getSaldo());
+        return String.format("ID: %s%nTitular: %s%n", getNumero(), getTitular());
     }
-
 }
