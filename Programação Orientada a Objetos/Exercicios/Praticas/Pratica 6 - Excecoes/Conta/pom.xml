@@ -11,9 +11,10 @@
 
     <artifactId>Conta</artifactId>
 
-
     <name>Classe conta</name>
     <url>http://www.minhaempresa.com/site</url>
+    <description>Esta é classe conta</description>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -28,6 +29,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <description>Este é o múdulo filho conta</description>
 
 </project>
