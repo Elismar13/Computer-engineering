@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 public class TesteBanco {
-    private final BigDecimal SALDOINICIAL = new BigDecimal("10.00");
+    private final BigDecimal SALDOINICIAL = new BigDecimal("10");
     private Banco banco;
     private ContaCorrente conta;
 
@@ -28,7 +28,7 @@ public class TesteBanco {
             conta = banco.cadrastro("Zé Rocha", new BigDecimal(100.00));
             Assert.assertNotNull(conta);
             Assert.assertEquals(conta.getTitular(), "Zé Rocha");
-            Assert.assertEquals(conta.saldo(), new BigDecimal("100.00"));
+            Assert.assertEquals(conta.saldo(), new BigDecimal("100"));
         } catch (Exception e) {
             throw new AssertionError("Erro no cadrastro!");
         }
@@ -43,12 +43,12 @@ public class TesteBanco {
             contaAtualizada = conta;
             contaAtualizada.deposito(new BigDecimal("10.00"));
             contaAtualizada = banco.atualizaConta(conta.getNumero(), contaAtualizada);
-            Assert.assertNotEquals(conta, contaAtualizada);
+            Assert.assertEquals(contaAtualizada.saldo(), new BigDecimal("20.00"));
 
-            banco.cadrastro("Joao", new BigDecimal("90.00"));
+            conta = banco.cadrastro("Joao", new BigDecimal("90.00"));
             conta.deposito(new BigDecimal("10.00"));
             contaAtualizada = banco.atualizaConta(conta.getNumero(), conta);
-            Assert.assertNotEquals(conta, contaAtualizada);
+            Assert.assertEquals(contaAtualizada.saldo(), new BigDecimal("100.00"));
 
         } catch (Exception e) {
             throw new AssertionError("Erro no teste!");

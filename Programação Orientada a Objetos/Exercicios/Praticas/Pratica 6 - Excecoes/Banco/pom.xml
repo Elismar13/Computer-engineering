@@ -11,15 +11,42 @@
 
     <artifactId>Banco</artifactId>
 
-
-    <name>Classe Banco</name>
+    <name>Classe banco</name>
     <url>http://www.minhaempresa.com/site</url>
+    <description>Esta é classe banco</description>
+
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>br.ifpb.edu.Main</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>br.ifpb.edu</groupId>
             <artifactId>Conta</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -28,6 +55,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <description>Este é o múdulo filho - Banco</description>
 
 </project>

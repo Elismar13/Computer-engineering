@@ -5,7 +5,6 @@ import br.ifpb.edu.exception.QuantiaNaoNegativaException;
 import br.ifpb.edu.exception.SaldoInuficienteException;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -113,7 +112,7 @@ public class Main {
                         System.out.print("Digite o ID da conta: ");
                         id = s4.nextLong();
                         if (!banco.existeContaComId(id)) {
-                            System.out.println("Este id não existe! Tente novamente.");
+                            System.out.println("Estee id não existe! Tente novamente.");
                             break;
                         }
                         System.out.println(banco.consultarSaldo(id));
