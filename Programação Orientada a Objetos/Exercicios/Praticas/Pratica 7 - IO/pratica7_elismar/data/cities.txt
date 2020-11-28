@@ -702,7 +702,7 @@ Perth Amboy, NJ, 51744
 Placentia, CA, 51673
 La Crosse, WI, 51647
 Kingsport, TN, 51501
-Milford, CT,  51488
+Milford, CT, 51488
 West NY, NJ, 51464
 Richland, WA, 51440
 Lakewood, OH, 51385
