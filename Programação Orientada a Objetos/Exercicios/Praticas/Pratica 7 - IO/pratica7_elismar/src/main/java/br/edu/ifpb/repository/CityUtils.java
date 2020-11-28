@@ -9,7 +9,7 @@ import br.edu.ifpb.models.City;
 
  */
 
-public class CityTextParser {
+public class CityUtils {
     public static City parseCityByLine(String cityLine) {
         String[] data = cityLine.split(",");
         String name = data[0].trim();
@@ -19,5 +19,9 @@ public class CityTextParser {
         City newCity = new City(name, uf, id);
 
         return newCity;
+    }
+
+    public static String generateCityLine(City city) {
+        return String.format("%s, %s, %d", city.getName(), city.getFederationUnit(), city.getCityId());
     }
 }
