@@ -32,15 +32,19 @@ public class CityParser implements CityDatabaseMiddleware {
         ) {
             String line = buffer.readLine();
             while(line != null) {
-
+                City newCity = CityTextParser.parseCityByLine(line);
+                cities.add(newCity);
+                line = buffer.readLine();
             }
         } catch (FileNotFoundException e) {
             System.out.println("File not found.");
         } catch (IOException e) {
             System.out.println("Problem while reading file. Please, check file corruption or user privileges.");
+        } catch (Exception e) {
+            System.out.println("Erro ao gerar cidade. Causa: " + e.getMessage());
         }
 
-        return null;
+        return cities;
     }
 
     @Override
