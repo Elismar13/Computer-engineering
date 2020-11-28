@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="pratica7_elismar" target="1.7" />
+      <module name="pratica7_elismar" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

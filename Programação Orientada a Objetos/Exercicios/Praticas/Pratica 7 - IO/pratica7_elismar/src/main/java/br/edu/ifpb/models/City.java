@@ -43,7 +43,7 @@ public class City implements Comparable<City> {
         if (!(o instanceof City)) return false;
 
         City city = (City) o;
-        return Objects.equals(this.getName(), city.getName());
+        return Objects.equals(this.getCityId(), city.getCityId());
     }
 
     @Override

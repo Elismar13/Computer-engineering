@@ -3,6 +3,7 @@ package br.edu.ifpb.repository;
 import br.edu.ifpb.models.City;
 
 import java.io.*;
+import java.nio.file.Path;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -32,7 +33,7 @@ public class CityParser implements CityDatabaseMiddleware {
         ) {
             String line = buffer.readLine();
             while(line != null) {
-                City newCity = CityTextParser.parseCityByLine(line);
+                City newCity = CityUtils.parseCityByLine(line);
                 cities.add(newCity);
                 line = buffer.readLine();
             }
@@ -48,7 +49,25 @@ public class CityParser implements CityDatabaseMiddleware {
     }
 
     @Override
-    public boolean writeSetOfCities(Set<City> cities) {
-        return false;
+    public boolean writeSetOfCities(Path destination, Set<City> cities) {
+        File newCityFile = new File(destination.toUri());
+
+        try(
+            FileWriter writer = new FileWriter(newCityFile);
+            BufferedWriter buffer = new BufferedWriter(writer);
+        ) {
+            if(newCityFile.createNewFile()) return false;
+
+            for(City city : cities) {
+                String line = CityUtils.generateCityLine(city);
+                buffer.write(line, 0, line.length());
+            }
+            buffer.flush();
+        } catch (IOException e) {
+            System.out.println("Falha ao escrever no arquivo.");
+            return false;
+        }
+
+        return true;
     }
 }

@@ -22,6 +22,6 @@ public class CityUtils {
     }
 
     public static String generateCityLine(City city) {
-        return String.format("%s, %s, %d", city.getName(), city.getFederationUnit(), city.getCityId());
+        return String.format("%s, %s, %d%n", city.getName(), city.getFederationUnit(), city.getCityId());
     }
 }

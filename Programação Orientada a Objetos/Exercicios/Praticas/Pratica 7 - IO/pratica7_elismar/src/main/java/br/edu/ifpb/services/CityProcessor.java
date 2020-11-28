@@ -3,7 +3,9 @@ package br.edu.ifpb.services;
 import br.edu.ifpb.models.City;
 import br.edu.ifpb.repository.CityDatabaseMiddleware;
 
+import java.nio.file.Path;
 import java.util.Comparator;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class CityProcessor {
@@ -13,13 +15,13 @@ public class CityProcessor {
         this.databaseMiddleware = databaseMiddleware;
     }
 
-    public boolean saveAllCities(TreeSet<City> cities, Comparator<City> comparator) {
-        return true;
-    }
-
     public TreeSet<City> getAllCities() {
         TreeSet<City> cities = (TreeSet) databaseMiddleware.buildSetOfCities();;
 
         return cities;
+    }
+
+    public boolean saveAllCities(Path fileDestinationPath, Set<City> cities) {
+        return databaseMiddleware.writeSetOfCities(fileDestinationPath, cities);
     }
 }
