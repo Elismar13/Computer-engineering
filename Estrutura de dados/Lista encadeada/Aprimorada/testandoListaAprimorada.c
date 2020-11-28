@@ -41,6 +41,6 @@ int main (void) {
     printf("Pegando o elemento da posicao 1: %d\n", valor);
 
     get(lista, 3, &valor);
-    printf("Pegando o elemento da posicao 3: %d", valor);
+    printf("Pegando o elemento da posicao 2: %d", valor);
 }
 

@@ -7,13 +7,14 @@
     <groupId>br.ifpb.edu</groupId>
     <artifactId>ProjBanco</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>Conta</module>
         <module>Banco</module>
     </modules>
 
 
-    <name>Projeto Banco</name>
+    <name>Projeto Banco Multimodulo</name>
     <url>http://www.minhaempresa.com/site</url>
     <description>Este é o múdulo pai das classes banco e conta</description>
     <packaging>pom</packaging>
@@ -25,7 +26,5 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
-
-
 
 </project>
