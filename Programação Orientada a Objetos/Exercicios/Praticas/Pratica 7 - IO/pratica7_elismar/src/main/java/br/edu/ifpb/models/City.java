@@ -53,6 +53,6 @@ public class City implements Comparable<City> {
 
     @Override
     public int compareTo(City city) {
-        return Integer.compare(getCityId(), city.getCityId());
+        return getName().compareTo(city.getName());
     }
 }
