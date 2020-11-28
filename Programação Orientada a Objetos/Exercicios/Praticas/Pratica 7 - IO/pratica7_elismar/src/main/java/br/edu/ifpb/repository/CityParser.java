@@ -4,6 +4,7 @@ import br.edu.ifpb.models.City;
 
 import java.io.*;
 import java.nio.file.Path;
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -49,8 +50,12 @@ public class CityParser implements CityDatabaseMiddleware {
     }
 
     @Override
-    public boolean writeSetOfCities(Path destination, Set<City> cities) {
+    public boolean writeSetOfCities(Path destination, Comparator<City> comparator, Set<City> cities) {
         File newCityFile = new File(destination.toUri());
+
+        // Criando uma nova árvore ordenada pelo critério escolhido
+        Set<City> newSetToWrite = new TreeSet<City>(comparator);
+        newSetToWrite.addAll(cities);
 
         try(
             FileWriter writer = new FileWriter(newCityFile);
@@ -58,7 +63,7 @@ public class CityParser implements CityDatabaseMiddleware {
         ) {
             if(newCityFile.createNewFile()) return false;
 
-            for(City city : cities) {
+            for(City city : newSetToWrite) {
                 String line = CityUtils.generateCityLine(city);
                 buffer.write(line, 0, line.length());
             }

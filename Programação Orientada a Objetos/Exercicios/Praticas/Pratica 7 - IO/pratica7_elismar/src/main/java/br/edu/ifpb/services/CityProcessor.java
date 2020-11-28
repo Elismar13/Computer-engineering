@@ -10,9 +10,18 @@ import java.util.TreeSet;
 
 public class CityProcessor {
     CityDatabaseMiddleware databaseMiddleware;
+    Set<City> cities;
 
     public CityProcessor(CityDatabaseMiddleware databaseMiddleware) {
         this.databaseMiddleware = databaseMiddleware;
+    }
+
+    public Set<City> getCities() {
+        return cities;
+    }
+
+    public void setCities(Set<City> cities) {
+        this.cities = cities;
     }
 
     public TreeSet<City> getAllCities() {
@@ -21,7 +30,7 @@ public class CityProcessor {
         return cities;
     }
 
-    public boolean saveAllCities(Path fileDestinationPath, Set<City> cities) {
-        return databaseMiddleware.writeSetOfCities(fileDestinationPath, cities);
+    public boolean saveAllCities(Path fileDestinationPath, Comparator<City> comparator) {
+        return databaseMiddleware.writeSetOfCities(fileDestinationPath, comparator, getCities());
     }
 }

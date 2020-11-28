@@ -64,7 +64,7 @@ Sacramento, CA, 475516
 Long Beach, CA, 467892
 Kansas, MO, 464310
 Mesa, AZ, 452084
-Virginia Beach, VA, 447021
+Wirginia Beach, WA, 887542
 Atlanta, GA, 443775
 Baltimore, MD, 621342
 Louisville/Jefferson County, KY, 605110
