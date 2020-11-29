@@ -69,7 +69,7 @@ public class CityParser implements CityDatabaseMiddleware {
             }
             buffer.flush();
         } catch (IOException e) {
-            System.out.println("Falha ao escrever no arquivo.");
+            System.out.println("Error while writing file.");
             return false;
         }
 
